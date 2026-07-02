@@ -1119,42 +1119,6 @@
             },
             {
                 "filters": {},
-                "link_id": "7f881e81-dee1-47e4-b91d-caad2ceeaf93",
-                "link_style": {
-                    "color": "#000000",
-                    "type": 1,
-                    "width": 2
-                },
-                "nodes": [
-                    {
-                        "adapter_number": 3,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "Gi0/3",
-                            "x": -14,
-                            "y": 25
-                        },
-                        "node_id": "547592d1-da92-44a3-bd9d-4ff76c2b065a",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 72,
-                            "y": 27
-                        },
-                        "node_id": "2638ea7d-52f3-49b6-88b6-3f58f1a93e29",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "e643c1b6-1385-4233-9954-15d3fc15b284",
                 "link_style": {
                     "color": "#000000",
@@ -2482,44 +2446,6 @@
                 "z": 1
             },
             {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "VM-AUTO-1",
-                    "x": -9,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "VM-AUTO-1",
-                "node_id": "2638ea7d-52f3-49b6-88b6-3f58f1a93e29",
-                "node_type": "vmware",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "adapter_type": "e1000",
-                    "adapters": 1,
-                    "headless": false,
-                    "linked_clone": false,
-                    "on_close": "power_off",
-                    "usage": "",
-                    "use_any_adapter": false,
-                    "vmx_path": "D:\\My Files\\8th Semester\\my\\data networks\\Data Networks\\VMs\\Automation Server\\VM-AUTO.vmx"
-                },
-                "symbol": ":/symbols/vmware_guest.svg",
-                "template_id": "04afa54b-3613-46f4-94f3-04b0adb51d71",
-                "width": 65,
-                "x": -792,
-                "y": -232,
-                "z": 1
-            },
-            {
                 "compute_id": "vm",
                 "console": 5034,
                 "console_auto_start": false,
@@ -2663,5 +2589,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.59",
-    "zoom": 49
+    "zoom": 58
 }
