@@ -1,0 +1,84 @@
+enable
+configure terminal
+hostname SW-D-DCEE
+ip routing
+
+enable secret Cisco
+ip domain-name foe.local
+no ip domain-lookup
+username admin privilege 15 secret Cisco
+crypto key generate rsa modulus 1024
+ip ssh version 2
+ip ssh time-out 60
+ip ssh authentication-retries 3
+line vty 0 15
+ transport input ssh
+ login local
+ exec-timeout 10 0
+exit
+line con 0
+ logging synchronous
+exit
+
+vlan 20
+ name VLAN_DCEE
+vlan 99
+ name MGMT
+vlan 100
+ name NATIVE
+exit
+
+interface Loopback0
+ ip address 4.4.4.4 255.255.255.255
+ ip ospf 1 area 0
+exit
+
+interface GigabitEthernet0/1
+ description Trunk to SW-A-DCEE
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 100
+ switchport trunk allowed vlan 20,99,100
+ no shutdown
+exit
+
+interface Vlan20
+ ip address 10.10.20.1 255.255.255.0
+ no shutdown
+exit
+
+interface Vlan99
+ ip address 10.99.99.65 255.255.255.224
+ no shutdown
+exit
+
+interface GigabitEthernet0/0
+ description Routed uplink to SW-CORE1
+ no switchport
+ ip address 172.16.20.1 255.255.255.252
+ ip ospf 1 area 0
+ no shutdown
+exit
+interface GigabitEthernet0/2
+ description Routed uplink to SW-CORE
+ no switchport
+ ip address 172.16.20.5 255.255.255.252
+ ip ospf 1 area 0
+ no shutdown
+exit
+
+router ospf 1
+ router-id 4.4.4.4
+ log-adjacency-changes
+ passive-interface Loopback0
+ passive-interface Vlan20
+ passive-interface Vlan99
+ network 4.4.4.4 0.0.0.0 area 0
+ network 10.10.20.0 0.0.0.255 area 0
+ network 10.99.99.64 0.0.0.31 area 0
+ network 172.16.20.0 0.0.0.3 area 0
+ network 172.16.20.4 0.0.0.3 area 0
+exit
+
+end
+write memory

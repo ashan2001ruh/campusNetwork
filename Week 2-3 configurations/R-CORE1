@@ -1,0 +1,62 @@
+enable
+configure terminal
+hostname R-CORE1
+
+enable secret Cisco
+ip domain-name foe.local
+no ip domain-lookup
+username admin privilege 15 secret Cisco
+crypto key generate rsa modulus 1024
+ip ssh version 2
+ip ssh time-out 60
+ip ssh authentication-retries 3
+line vty 0 15
+ transport input ssh
+ login local
+ exec-timeout 10 0
+exit
+line con 0
+ logging synchronous
+exit
+
+interface Loopback0
+ ip address 6.6.6.6 255.255.255.255
+ ip ospf 1 area 0
+exit
+
+interface GigabitEthernet2/0
+ description Link to SW-CORE1
+ ip address 172.16.1.2 255.255.255.252
+ ip ospf 1 area 0
+ no shutdown
+exit
+
+interface GigabitEthernet4/0
+ description Link to SW-CORE
+ ip address 172.16.1.14 255.255.255.252
+ ip ospf 1 area 0
+ no shutdown
+exit
+
+interface GigabitEthernet1/0
+ description Link to R-CORE
+ ip address 172.16.2.2 255.255.255.252
+ ip ospf 1 area 0
+ no shutdown
+exit
+
+interface GigabitEthernet3/0
+ description Link to R-EDGE
+ ip address 172.16.2.5 255.255.255.252
+ ip ospf 1 area 0
+ no shutdown
+exit
+
+router ospf 1
+ router-id 6.6.6.6
+ log-adjacency-changes
+ passive-interface Loopback0
+exit
+
+end
+write memory
