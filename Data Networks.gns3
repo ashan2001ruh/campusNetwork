@@ -68,7 +68,7 @@
                 "rotation": 0,
                 "svg": "<svg width=\"890\" height=\"432\"><rect width=\"890\" height=\"432\" fill=\"#ffffff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
                 "x": -453,
-                "y": 37,
+                "y": 38,
                 "z": -1
             },
             {
@@ -111,9 +111,9 @@
                 "drawing_id": "da048a31-7952-4445-981a-d8bd86ef6c3c",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"42\" height=\"23\"><text font-family=\"Segoe UI\" font-size=\"8.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Gi 0/0 </text></svg>",
-                "x": 198,
-                "y": -205,
+                "svg": "<svg width=\"39\" height=\"23\"><text font-family=\"Segoe UI\" font-size=\"8.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Gi 1/1</text></svg>",
+                "x": 185,
+                "y": -200,
                 "z": 2
             },
             {
@@ -130,7 +130,7 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"113\" height=\"23\"><text font-family=\"Segoe UI\" font-size=\"8.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">GigabitEthernet 1/0 </text></svg>",
-                "x": 453,
+                "x": 426,
                 "y": -218,
                 "z": 2
             },
@@ -346,7 +346,7 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"725\" height=\"246\"><rect width=\"725\" height=\"246\" fill=\"#ffffff\" fill-opacity=\"1.0\" stroke-width=\"2\" stroke=\"#000000\" /></svg>",
-                "x": -359,
+                "x": -354,
                 "y": -355,
                 "z": 0
             },
@@ -410,7 +410,7 @@
                 "rotation": 0,
                 "svg": "<svg width=\"42\" height=\"23\"><text font-family=\"Segoe UI\" font-size=\"8.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Gi 0/2 </text></svg>",
                 "x": -139,
-                "y": -126,
+                "y": -129,
                 "z": 2
             },
             {
@@ -445,8 +445,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"42\" height=\"23\"><text font-family=\"Segoe UI\" font-size=\"8.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">Gi 1/0 </text></svg>",
-                "x": -104,
-                "y": -150,
+                "x": -106,
+                "y": -161,
                 "z": 2
             },
             {
@@ -463,8 +463,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"116\" height=\"23\"><text font-family=\"Segoe UI\" font-size=\"8.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">GigabitEthernet 4/0  </text></svg>",
-                "x": 29,
-                "y": -285,
+                "x": 37,
+                "y": -281,
                 "z": 2
             },
             {
@@ -573,6 +573,15 @@
                 "svg": "<svg width=\"52\" height=\"24\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">DMME </text></svg>",
                 "x": 251,
                 "y": 361,
+                "z": 2
+            },
+            {
+                "drawing_id": "48c7f9c1-b804-479f-890c-4c5c01612c95",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"113\" height=\"23\"><text font-family=\"Segoe UI\" font-size=\"8.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">GigabitEthernet 2/0 </text></svg>",
+                "x": 583,
+                "y": -206,
                 "z": 2
             }
         ],
@@ -1512,6 +1521,42 @@
                     }
                 ],
                 "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "3e730194-df34-41d2-aae9-6410cb35bfc8",
+                "link_style": {
+                    "color": "#000000",
+                    "type": 1,
+                    "width": 2
+                },
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "nat0",
+                            "x": 0,
+                            "y": 38
+                        },
+                        "node_id": "fb5f87e7-2a8f-4bbd-b8c3-79c2babc8514",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "g2/0",
+                            "x": 72,
+                            "y": 20
+                        },
+                        "node_id": "38eff4d7-28ef-4a7b-bb04-661cfa412039",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
             }
         ],
         "nodes": [
@@ -1526,12 +1571,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R-CORE",
-                    "x": 3,
+                    "text": "R-CORE1",
+                    "x": 0,
                     "y": -25
                 },
                 "locked": false,
-                "name": "R-CORE",
+                "name": "R-CORE1",
                 "node_id": "1d608fa0-4fc9-4fd8-8309-4f660036d7d1",
                 "node_type": "dynamips",
                 "port_name_format": "Ethernet{0}",
@@ -1545,7 +1590,7 @@
                     "dynamips_id": 1,
                     "exec_area": 64,
                     "idlemax": 500,
-                    "idlepc": "",
+                    "idlepc": "0x60189214",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.M7.image",
                     "image_md5sum": "1a698eb389ef23f46286211215711705",
@@ -1614,7 +1659,7 @@
                     "dynamips_id": 2,
                     "exec_area": 64,
                     "idlemax": 500,
-                    "idlepc": "",
+                    "idlepc": "0x60189214",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.M7.image",
                     "image_md5sum": "1a698eb389ef23f46286211215711705",
@@ -1650,7 +1695,7 @@
                 "template_id": "c77166fc-0754-4860-b678-2c84eea10291",
                 "width": 66,
                 "x": 530,
-                "y": -234,
+                "y": -231,
                 "z": 1
             },
             {
@@ -2069,8 +2114,8 @@
                 "symbol": ":/symbols/multilayer_switch.svg",
                 "template_id": "ec995f44-df4b-4b08-b391-ccb378cc29fe",
                 "width": 51,
-                "x": 251,
-                "y": -56,
+                "x": 249,
+                "y": -53,
                 "z": 1
             },
             {
@@ -2154,12 +2199,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "SW-CORE",
-                    "x": -10,
-                    "y": -25
+                    "text": "SW-CORE1",
+                    "x": 45,
+                    "y": -11
                 },
                 "locked": false,
-                "name": "SW-CORE",
+                "name": "SW-CORE1",
                 "node_id": "911c021e-a7b0-4b27-84b4-adb9a1731f1d",
                 "node_type": "qemu",
                 "port_name_format": "Gi{1}/{0}",
@@ -2239,7 +2284,7 @@
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
                 "x": -370,
-                "y": 264,
+                "y": 262,
                 "z": 1
             },
             {
@@ -2325,8 +2370,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": 11,
-                "y": 264,
+                "x": 13,
+                "y": 263,
                 "z": 1
             },
             {
@@ -2398,12 +2443,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC7",
+                    "text": "PC8",
                     "x": 15,
                     "y": -25
                 },
                 "locked": false,
-                "name": "PC7",
+                "name": "PC8",
                 "node_id": "3ef433e1-daef-449e-9751-76fdfaf96d98",
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
@@ -2427,12 +2472,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "PC8",
+                    "text": "PC7",
                     "x": 15,
                     "y": -25
                 },
                 "locked": false,
-                "name": "PC8",
+                "name": "PC7",
                 "node_id": "2bd7658f-9020-46a4-aada-522abac3d4e2",
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
@@ -2456,12 +2501,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R-CORE1",
-                    "x": 0,
+                    "text": "R-CORE",
+                    "x": 3,
                     "y": -25
                 },
                 "locked": false,
-                "name": "R-CORE1",
+                "name": "R-CORE",
                 "node_id": "8cbf14de-ff67-44b7-9866-5fd809e842b3",
                 "node_type": "dynamips",
                 "port_name_format": "Ethernet{0}",
@@ -2475,7 +2520,7 @@
                     "dynamips_id": 3,
                     "exec_area": 64,
                     "idlemax": 500,
-                    "idlepc": "",
+                    "idlepc": "0x60189214",
                     "idlesleep": 30,
                     "image": "c7200-adventerprisek9-mz.152-4.M7.image",
                     "image_md5sum": "1a698eb389ef23f46286211215711705",
@@ -2511,7 +2556,7 @@
                 "template_id": "c77166fc-0754-4860-b678-2c84eea10291",
                 "width": 66,
                 "x": -182,
-                "y": -329,
+                "y": -328,
                 "z": 1
             },
             {
@@ -2525,12 +2570,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "SW-CORE1",
-                    "x": -14,
-                    "y": -25
+                    "text": "SW-CORE",
+                    "x": -50,
+                    "y": -27
                 },
                 "locked": false,
-                "name": "SW-CORE1",
+                "name": "SW-CORE",
                 "node_id": "4970914a-60bf-4495-af6f-ca0e9b4f5c71",
                 "node_type": "qemu",
                 "port_name_format": "Gi{1}/{0}",
@@ -2580,8 +2625,46 @@
                 "symbol": ":/symbols/multilayer_switch.svg",
                 "template_id": "ec995f44-df4b-4b08-b391-ccb378cc29fe",
                 "width": 51,
-                "x": -175,
+                "x": -173,
                 "y": -168,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "NAT1",
+                    "x": 57,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "NAT1",
+                "node_id": "fb5f87e7-2a8f-4bbd-b8c3-79c2babc8514",
+                "node_type": "nat",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "ports_mapping": [
+                        {
+                            "interface": "virbr0",
+                            "name": "nat0",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        }
+                    ]
+                },
+                "symbol": ":/symbols/nat.svg",
+                "template_id": "df8f4ea9-33b7-3e96-86a2-c39bc9bb649c",
+                "width": 159,
+                "x": 717,
+                "y": -254,
                 "z": 1
             }
         ]
@@ -2589,5 +2672,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.59",
-    "zoom": 58
+    "zoom": 69
 }
